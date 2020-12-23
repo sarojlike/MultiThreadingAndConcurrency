@@ -48,8 +48,8 @@ class Consumer extends Thread{
                   
                   System.out.println("Consumer waiting for production to get over.");
                      try{
-                         //this.prod.wait();  
-                    	 wait();
+                         this.prod.wait();  
+                    	 
                         }catch(InterruptedException e){e.printStackTrace();}
                   
            }
